@@ -1,0 +1,10 @@
+{
+  "development": {
+    "host": "dev-db-sg.cmaqmm2ewm0u.ap-southeast-1.rds.amazonaws.com",
+    "port": "3350",
+    "username": "wandersnap_prod",
+    "password": "u5m*C.b:3B`[.:~`8W",
+    "database": "ws_dev",
+    "dialect": "mysql"
+  }
+}

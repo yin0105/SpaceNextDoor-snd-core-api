@@ -1,0 +1,15 @@
+build_image:
+  script:
+    - docker build -t ws-api .
+  only:
+    - development
+
+deploy:
+  script:
+    - (docker stop ws-api || true) && (docker rm ws-api || true)
+    - docker run --restart always -P -d --name ws-api -v /home/ec2-user/ssl/:/app/key/ -v `pwd`/:/root/.aws -e VIRTUAL_PROTO=http -e WANDERSNAP_FB_SECRET=$WANDERSNAP_FB_SECRET -e WS_MAILCHIMP_MANDRILL=$WS_MAILCHIMP_MANDRILL -e WANDERSNAP_FB_ID=$WANDERSNAP_FB_ID -e NODE_ENV=development -e VIRTUAL_HOST=dev-api.wandersnap.co ws-api
+  after_script:
+    - docker rmi `docker images | grep "<none>" | awk '{print $3}'`
+  only:
+    - development
+

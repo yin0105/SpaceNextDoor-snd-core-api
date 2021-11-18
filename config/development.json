@@ -1,0 +1,9 @@
+{
+  "s3": {
+    "accessKey": "AKIAI2ONCRPTYX7JQZFA",
+    "secretAccessKey": "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",
+    "bucket": "meteor-shower-dev",
+    "region": "ap-southeast-1"
+  },
+  "maxBytes": 100242880
+}

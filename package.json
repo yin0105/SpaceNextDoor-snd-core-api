@@ -1,0 +1,93 @@
+{
+  "name": "WanderSnap-api",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Lean Hapi API Boilerplate",
+  "bugs": {
+    "url": "https://github.com/indulgee/core-api"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/lab/bin/lab -v",
+    "start": "node server.js",
+    "start:lint": "npm-run-all --parallel lint start:watch",
+    "start:watch": "nodemon server.js",
+    "lint": "eslint . --ext .js"
+  },
+  "author": "Omer Baig",
+  "homepage": "https://github.com/indulgee/core-api",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indulgee/core-api.git"
+  },
+  "keywords": [
+    "hapi",
+    "boilerplate"
+  ],
+  "dependencies": {
+    "async": "^2.1.5",
+    "asyncawait": "^1.0.6",
+    "await-to-js": "^2.0.1",
+    "aws-sdk": "^2.96.0",
+    "bcrypt": "^1.0.2",
+    "bell": "^9.3.0",
+    "blipp": "^3.0.0",
+    "bluebird": "^3.5.0",
+    "bookshelf": "^0.10.4",
+    "boom": "^7.2.0",
+    "glue": "^5.0.0",
+    "gm": "^1.23.0",
+    "good": "^8.1.1",
+    "good-console": "^7.1.0",
+    "good-squeeze": "^5.1.0",
+    "hapi": "^17.4.0",
+    "hapi-auth-jwt2": "^8.1.0",
+    "hapi-raven": "^7.0.0",
+    "inert": "^5.1.0",
+    "joi": "^13.3.0",
+    "jsonwebtoken": "^7.4.2",
+    "knex": "^0.13.0",
+    "mongoose": "^4.11.6",
+    "mysql2": "^1.4.2",
+    "node-mandrill": "^1.0.1",
+    "node-uuid": "^1.4.8",
+    "nodemailer": "^3.1.4",
+    "paypal-rest-sdk": "^1.8.1",
+    "pipefy": "^0.1.1",
+    "pusher": "^1.5.1",
+    "request": "^2.83.0",
+    "s3-streaming-upload": "^0.2.3",
+    "s3-zip": "^1.0.1",
+    "sequelize": "^4.15.0",
+    "sequence-sdk": "^1.5.0",
+    "sharp": "^0.19.0",
+    "shortid": "^2.2.8",
+    "slug": "^0.9.1",
+    "stripe": "^4.15.0",
+    "twilio": "^3.6.1",
+    "underscore": "^1.8.3",
+    "vision": "^5.3.2",
+    "xero-node": "^3.0.4",
+    "xml-stream": "^0.4.5",
+    "xmlbuilder": "^10.0.0"
+  },
+  "devDependencies": {
+    "code": "^4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.12.0",
+    "hapi-swagger": "^9.1.1",
+    "lab": "^11.2.1",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^3.1.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    }
+  },
+  "directories": {
+    "test": "test"
+  }
+}
